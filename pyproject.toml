@@ -1,0 +1,18 @@
+[build-system]
+requires = [ "setuptools" ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "JWT_Tool"
+version = "2.2.7"
+description = "The JSON Web Token Toolkit"
+authors = [ { name = "ticarpi" } ]
+license = { text = "GPL-3.0" }
+dynamic = [ "dependencies" ]
+
+[tool.setuptools]
+script-files = [ "jwt_tool.py" ]
+
+[tool.setuptools.dynamic]
+dependencies = { file = [ "requirements.txt"] }
+
